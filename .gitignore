@@ -1,0 +1,63 @@
+# Python & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Packages & Distributions
+build/
+dist/
+*.egg-info/
+eggs/
+.eggs/
+*.egg
+MANIFEST
+wheels/
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+
+# IDEs & Editors
+.idea/
+.vscode/
+*.swp
+
+# Testing & Coverage
+htmlcov/
+.tox/
+.pytest_cache/
+.coverage
+.hypothesis/
+
+# Type checking & lint caches
+.mypy_cache/
+.ruff_cache/
+.pyre/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# Local databases
+*.sqlite
+*.sqlite3
+
+# Python version managers
+.python-version
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local environment secrets
+.env
+.env.*
+!.env.example
+
+# our own output
+seed*.sql

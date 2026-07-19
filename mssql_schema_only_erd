@@ -1,0 +1,147 @@
+digraph G {
+        graph [
+            nodesep=0.5;
+            rankdir="LR";
+            cencentrate=true;
+            splines="spline";
+            fontname="Helvetica";
+            pad="0.2,0.2",
+            label="",
+
+        ];
+
+        node [shape=plain, fontname="Helvetica"];
+        edge [
+            dir=both,
+            fontsize=12,
+            arrowsize=0.9,
+            penwidth=1.0,
+            labelangle=32,
+            labeldistance=1.8,
+            fontname="Helvetica"
+        ];
+
+	 core.Players [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>core.Players</b></td></tr>
+        
+		<tr><td port="playerID" align="left" cellpadding="5">playerID <font color="grey60">object</font></td></tr>
+		<tr><td port="sportCode" align="left" cellpadding="5">sportCode <font color="grey60">object</font></td></tr>
+		<tr><td port="teamCode" align="left" cellpadding="5">teamCode <font color="grey60">object</font></td></tr>
+		<tr><td port="positionCode" align="left" cellpadding="5">positionCode <font color="grey60">object</font></td></tr>
+		<tr><td port="firstName" align="left" cellpadding="5">firstName <font color="grey60">object</font></td></tr>
+		<tr><td port="lastName" align="left" cellpadding="5">lastName <font color="grey60">object</font></td></tr>
+		<tr><td port="dateOfBirth" align="left" cellpadding="5">dateOfBirth <font color="grey60">object</font></td></tr>
+		<tr><td port="heightInches" align="left" cellpadding="5">heightInches <font color="grey60">object</font></td></tr>
+		<tr><td port="weight" align="left" cellpadding="5">weight <font color="grey60">object</font></td></tr>
+		<tr><td port="number" align="left" cellpadding="5">number <font color="grey60">object</font></td></tr>
+		<tr><td port="college" align="left" cellpadding="5">college <font color="grey60">object</font></td></tr>
+		<tr><td port="birthCountry" align="left" cellpadding="5">birthCountry <font color="grey60">object</font></td></tr>
+		<tr><td port="birthCityState" align="left" cellpadding="5">birthCityState <font color="grey60">object</font></td></tr>
+		<tr><td port="draftYear" align="left" cellpadding="5">draftYear <font color="grey60">object</font></td></tr>
+		<tr><td port="seasonYear" align="left" cellpadding="5">seasonYear <font color="grey60">object</font></td></tr>
+		</table>>];
+
+	 core.Teams [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>core.Teams</b></td></tr>
+        
+		<tr><td port="teamCode" align="left" cellpadding="5">teamCode <font color="grey60">object</font></td></tr>
+		<tr><td port="sportCode" align="left" cellpadding="5">sportCode <font color="grey60">object</font></td></tr>
+		<tr><td port="teamShortName" align="left" cellpadding="5">teamShortName <font color="grey60">object</font></td></tr>
+		<tr><td port="teamName" align="left" cellpadding="5">teamName <font color="grey60">object</font></td></tr>
+		<tr><td port="league" align="left" cellpadding="5">league <font color="grey60">object</font></td></tr>
+		<tr><td port="ESPNteamCode" align="left" cellpadding="5">ESPNteamCode <font color="grey60">object</font></td></tr>
+		</table>>];
+
+	 reference.PositionCodes [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>reference.PositionCodes</b></td></tr>
+        
+		<tr><td port="sportCode" align="left" cellpadding="5">sportCode <font color="grey60">object</font></td></tr>
+		<tr><td port="positionCode" align="left" cellpadding="5">positionCode <font color="grey60">object</font></td></tr>
+		<tr><td port="positionDesc" align="left" cellpadding="5">positionDesc <font color="grey60">object</font></td></tr>
+		</table>>];
+
+	 reference.Sports [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>reference.Sports</b></td></tr>
+        
+		<tr><td port="sportCode" align="left" cellpadding="5">sportCode <font color="grey60">object</font></td></tr>
+		<tr><td port="sportName" align="left" cellpadding="5">sportName <font color="grey60">object</font></td></tr>
+		</table>>];
+
+	 stats.Attendance [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>stats.Attendance</b></td></tr>
+        
+		<tr><td port="sportCode" align="left" cellpadding="5">sportCode <font color="grey60">object</font></td></tr>
+		<tr><td port="yearId" align="left" cellpadding="5">yearId <font color="grey60">object</font></td></tr>
+		<tr><td port="attendance" align="left" cellpadding="5">attendance <font color="grey60">object</font></td></tr>
+		</table>>];
+
+	 stats.MLBPlayerStats [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>stats.MLBPlayerStats</b></td></tr>
+        
+		<tr><td port="playerID" align="left" cellpadding="5">playerID <font color="grey60">object</font></td></tr>
+		<tr><td port="sportCode" align="left" cellpadding="5">sportCode <font color="grey60">object</font></td></tr>
+		<tr><td port="bats" align="left" cellpadding="5">bats <font color="grey60">object</font></td></tr>
+		<tr><td port="throws" align="left" cellpadding="5">throws <font color="grey60">object</font></td></tr>
+		<tr><td port="battingAverage" align="left" cellpadding="5">battingAverage <font color="grey60">object</font></td></tr>
+		<tr><td port="homeRuns" align="left" cellpadding="5">homeRuns <font color="grey60">object</font></td></tr>
+		<tr><td port="ERA" align="left" cellpadding="5">ERA <font color="grey60">object</font></td></tr>
+		</table>>];
+
+	 stats.NBAPlayerStats [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>stats.NBAPlayerStats</b></td></tr>
+        
+		<tr><td port="playerID" align="left" cellpadding="5">playerID <font color="grey60">object</font></td></tr>
+		<tr><td port="sportCode" align="left" cellpadding="5">sportCode <font color="grey60">object</font></td></tr>
+		<tr><td port="pointsPerGame" align="left" cellpadding="5">pointsPerGame <font color="grey60">object</font></td></tr>
+		<tr><td port="reboundsPerGame" align="left" cellpadding="5">reboundsPerGame <font color="grey60">object</font></td></tr>
+		<tr><td port="assistsPerGame" align="left" cellpadding="5">assistsPerGame <font color="grey60">object</font></td></tr>
+		</table>>];
+
+	 stats.NFLPlayerStats [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>stats.NFLPlayerStats</b></td></tr>
+        
+		<tr><td port="playerID" align="left" cellpadding="5">playerID <font color="grey60">object</font></td></tr>
+		<tr><td port="sportCode" align="left" cellpadding="5">sportCode <font color="grey60">object</font></td></tr>
+		<tr><td port="sacks" align="left" cellpadding="5">sacks <font color="grey60">object</font></td></tr>
+		<tr><td port="touchdowns" align="left" cellpadding="5">touchdowns <font color="grey60">object</font></td></tr>
+		</table>>];
+
+	 stats.NHLPlayerStats [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>stats.NHLPlayerStats</b></td></tr>
+        
+		<tr><td port="playerID" align="left" cellpadding="5">playerID <font color="grey60">object</font></td></tr>
+		<tr><td port="sportCode" align="left" cellpadding="5">sportCode <font color="grey60">object</font></td></tr>
+		<tr><td port="handed" align="left" cellpadding="5">handed <font color="grey60">object</font></td></tr>
+		<tr><td port="goals" align="left" cellpadding="5">goals <font color="grey60">object</font></td></tr>
+		<tr><td port="penaltyMinutes" align="left" cellpadding="5">penaltyMinutes <font color="grey60">object</font></td></tr>
+		<tr><td port="points" align="left" cellpadding="5">points <font color="grey60">object</font></td></tr>
+		<tr><td port="savePct" align="left" cellpadding="5">savePct <font color="grey60">object</font></td></tr>
+		</table>>];
+
+	 core.Players:sportCode->reference.PositionCodes:sportCode;
+
+	 core.Players:sportCode->core.Teams:sportCode;
+
+	 core.Teams:sportCode->reference.Sports:sportCode;
+
+	 reference.PositionCodes:sportCode->reference.Sports:sportCode;
+
+	 stats.Attendance:sportCode->reference.Sports:sportCode;
+
+	 stats.MLBPlayerStats:playerID->core.Players:playerID;
+
+	 stats.NBAPlayerStats:playerID->core.Players:playerID;
+
+	 stats.NFLPlayerStats:playerID->core.Players:playerID;
+
+	 stats.NHLPlayerStats:playerID->core.Players:playerID;
+	}

@@ -1,0 +1,6 @@
+pandas
+sqlalchemy
+pandaserd
+pyodbc
+graphviz
+python-dotenv
