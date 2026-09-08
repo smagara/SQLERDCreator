@@ -4,6 +4,10 @@ Generate an Entity Relationship Diagram (ERD) for a SQL Server database **withou
 
 This project is aimed at database developers and DBAs who want a quick schema map from system metadata (tables, columns, PKs, FKs).
 
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
 ## What It Does
 
 - Connects to SQL Server via SQLAlchemy + pyodbc.
